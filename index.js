@@ -188,7 +188,7 @@ const run = async () => {
     });
     
 
-    // approve or deny classsss by admin
+    // approve or deny class by admin
     app.patch("/api/classes/:id", verifyJWT, verifyAdmin, async (req, res) => {
       try {
         const {action} = req.body;
